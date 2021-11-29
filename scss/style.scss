@@ -1,0 +1,36 @@
+@use "sass:math";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+$blue: hsl(223, 87%, 63%);
+$pale-blue: hsl(223, 100%, 88%);
+$light-red: hsl(354, 100%, 66%);
+$gray: hsl(0, 0%, 59%);
+$very-dark-blue: hsl(209, 33%, 12%);
+
+$fontLibre: 'Libre Franklin', sans-serif;
+
+@mixin fontSize($size) {
+    font-size: calculaRem($size);
+}
+
+@function calculaRem($size) {
+    @return math.div($size, 16px) * 1rem;
+}
+
+@mixin for-desktop-only {
+    @media screen and (min-width: 900px) {
+        @content;
+    }
+}
+
+@mixin flx($property, $jty-cnt) {
+    display: flex;
+    #{$property}: $jty-cnt;
+}
+
