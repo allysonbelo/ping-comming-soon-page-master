@@ -1,5 +1,6 @@
 @use "sass:math";
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,7 +14,8 @@ $light-red: hsl(354, 100%, 66%);
 $gray: hsl(0, 0%, 59%);
 $very-dark-blue: hsl(209, 33%, 12%);
 
-$fontLibre: 'Libre Franklin', sans-serif;
+$fontLibre: 'Libre Franklin',
+sans-serif;
 
 @mixin fontSize($size) {
     font-size: calculaRem($size);
@@ -34,3 +36,16 @@ $fontLibre: 'Libre Franklin', sans-serif;
     #{$property}: $jty-cnt;
 }
 
+
+
+
+.footer {
+    &__attribution {
+        font-size: 11px;
+        text-align: center;
+
+        a {
+            color: hsl(228, 45%, 44%);
+        }
+    }
+}
