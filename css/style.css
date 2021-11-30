@@ -5,9 +5,154 @@
   box-sizing: border-box;
 }
 
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Libre Franklin", sans-serif;
+}
+.container .main {
+  width: 100%;
+  text-align: center;
+  margin-top: 5rem;
+}
+@media screen and (min-width: 900px) {
+  .container .main {
+    max-width: 900px;
+  }
+}
+.container .main__title::before {
+  content: url(../images/logo.svg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.container .main__title {
+  font-size: 1.625rem;
+  color: #969696;
+  font-weight: 300;
+}
+@media screen and (min-width: 900px) {
+  .container .main__title {
+    font-size: 2.75rem;
+    font-weight: 300;
+  }
+}
+.container .main__title span {
+  font-weight: 700;
+  color: #151f29;
+}
+.container .main__text {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+}
+@media screen and (min-width: 900px) {
+  .container .main__text {
+    font-size: 1.125rem;
+    font-weight: 300;
+  }
+}
+.container .main__form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 900px) {
+  .container .main__form {
+    flex-direction: row;
+  }
+}
+.container .main__form input[type=text] {
+  color: #969696;
+  border-radius: 50px;
+  border: 1px solid #c2d3ff;
+  padding: 0.8rem 2rem;
+  width: 80%;
+  margin-bottom: 1rem;
+}
+@media screen and (min-width: 900px) {
+  .container .main__form input[type=text] {
+    width: 60%;
+    margin-right: 1rem;
+  }
+}
+.container .main__form input[type=submit] {
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  background-color: #4f7df3;
+  border-radius: 50px;
+  border: none;
+  padding: 0.8rem 2rem;
+  width: 80%;
+  margin-bottom: 1rem;
+  transition: transform 0.3s;
+}
+@media screen and (min-width: 900px) {
+  .container .main__form input[type=submit] {
+    width: 40%;
+  }
+}
+.container .main__form input[type=submit]:hover {
+  transform: scale(1.03);
+}
+.container .main__img {
+  width: 100%;
+  margin-top: 4rem;
+}
+@media screen and (max-width: 778px) {
+  .container .main__img {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.footer {
+  width: 80%;
+  text-align: center;
+}
+.footer__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.footer__list .item {
+  cursor: pointer;
+  color: #4f7df3;
+  border-radius: 50px;
+  border: 1px solid #c2d3ff;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s;
+  margin-right: 1rem;
+}
+.footer__list .item:hover {
+  transform: scale(1.5);
+}
+.footer__list .last {
+  margin-right: 0;
+}
+.footer__p {
+  font-size: 0.75rem;
+  color: #969696;
+}
 .footer__attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .footer__attribution a {
   color: #3e52a3;

@@ -7,24 +7,40 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/script.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   <title>Frontend Mentor | Ping coming soon page</title>
 </head>
 
 <body class="container">
+  <div class="main">
+    <h2 class="main__title">We are launching <span>soon!</span></h2>
 
-  We are launching soon!
+    <p class="main__text">Subscribe and get notified</p>
 
-  Subscribe and get notified
+    <form class="main__form">
+      <input type="text" placeholder="Your email address">
+      <input type="submit" value="Notify Me">
+    </form>
 
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
+    <img src="images/illustration-dashboard.png" alt="Dashboard" class="main__img">
+  </div>
 
   <footer class="footer">
+
+    <ul class="footer__list">
+      <li><i class="fab fa-facebook-f item"></i></li>
+      <li><i class="fab fa-twitter item"></i></li>
+      <li><i class="fab fa-instagram item last"></i></li>
+    </ul>
+
+    <p class="footer__p">&copy; Copyright Ping. All rights reserved.</p>
+
     <p class="footer__attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://allysonbelo.com" target="_blank">Allyson Cavalcante</a>.
     </p>
+
   </footer>
 </body>
 
